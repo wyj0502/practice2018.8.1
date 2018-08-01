@@ -1,0 +1,94 @@
+@import "common.scss";
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: #f8f8f8;
+    flex-direction: column;
+    .header {
+        width: 100%;
+        height: px2rem(40px);
+        display: flex;
+        background: #ff852a;
+        span {
+            width: px2rem(40px);
+            height: px2rem(40px);
+            display: block;
+            text-align: center;
+            line-height: px2rem(40px);
+            font-size: px2rem(25px);
+            color: #fff;
+        }
+        input {
+            flex: 1;
+            margin: px2rem(5px) px2rem(10px) px2rem(5px) 0;
+            border: 0;
+            outline: 0;
+            border-radius: px2rem(10px);
+            text-align: center;
+            background: #ff4e22;
+            &::-webkit-input-placeholder {
+                color: #fff;
+                font-size: px2rem(16px);
+            }
+        }
+    }
+    .main {
+        flex: 1;
+        width: 100%;
+        overflow-y: auto;
+        .banner {
+            width: 100%;
+            img {
+                width: 100%;
+                height: px2rem(150px);
+            }
+        }
+        .nav {
+            width: 100%;
+            height: px2rem(180px);
+            background: #fff;
+            display: flex;
+            flex-wrap: wrap;
+            padding: px2rem(10px) px2rem(10px);
+            dl {
+                width: 20%;
+                text-align: center;
+                img {
+                    width: px2rem(60px);
+                    height: auto;
+                }
+            }
+        }
+        .box1 {
+            width: 100%;
+            height: px2rem(70px);
+            background: #fff;
+            display: flex;
+            >p {
+                height: px2rem(70px);
+                width: px2rem(70px);
+                padding: px2rem(8px);
+                font-size: px2rem(20px);
+                text-align: center;
+            }
+            .box1-right {
+                flex: 1;
+            }
+        }
+    }
+    .footer {
+        width: 100%;
+        height: px2rem(50px);
+        display: flex;
+        color: #82898d;
+        background: #fff;
+        justify-content: space-around;
+        align-items: center;
+        dl {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+    }
+}
