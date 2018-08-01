@@ -72,14 +72,21 @@
             </div>
             <div class="box1">
                 <p>淘宝头条</p>
-                <div class="box1-right">
-                    <ul>
-                        <li>
+                <div class="box1-right swiper-container">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
                             <div>
                                 <p>需要多久?都能减掉10公斤纯脂肪</p>
                                 <p>需胎宝宝这么喜欢在这两个时间</p>
                             </div>
                             <img src="https://ossgw.alicdn.com/tbheadline/g0/2o9Hm3Q/m/vlyiwtox.jpg" alt="">
+                        </li>
+                        <li class="swiper-slide">
+                            <div>
+                                <p>安全气囊弹出一次 塞回去花多久</p>
+                                <p>超累的十个运动 但减肥效果好</p>
+                            </div>
+                            <img src="https://ossgw.alicdn.com/tbheadline/g0/24hHn3c/m/fnpgoioo.jpg" alt="">
                         </li>
                     </ul>
 
@@ -117,6 +124,16 @@
                 pagination: {
                     el: ".ol"
                 }
+            });
+            new Swiper(".box1-right", {
+                autoplay: {
+                    delay: 1000
+                },
+                loop: true,
+                pagination: {
+                    el: ".ol"
+                },
+                direction: "vertical"
             });
         </script>
     </div>
